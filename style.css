@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #4a4b72;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+}
+.container {
+  width: 350px;
+  height: 500px;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction:column;
+}
+.items {
+  display: flex;
+  background-color: #4a4b72;
+}
+.item {
+  background: #353648;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70px;
+  height: 55px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.item:hover {
+  background-color: #2c2d38;
+}
+.item img {
+  color: gray;
+  opacity: 0.65;
+}
+
+.cafe {
+  transform: scale(1.28);
+  margin: 0;
+  box-shadow: 0 0 10px #00000066;
+}
+
+.cafe:hover {
+  background: #212121;
+  transform: scale(1.4);
+}
+
+.cafe img {
+  opacity: 0.9;
+}
+.menu {
+  border-radius: 5px;
+  height: 100%;
+  padding: 1.8rem;
+}
+.menu-photo {
+  background: url(./images/food.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 40%;
+  padding: 1.25rem;
+  color: #fff;
+  position: relative;
+  border-radius: 5px;
+}
+.menu-photo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.menu-photo h2,
+p {
+  z-index: 10;
+}
+
+.menu-photo h2 {
+  font-size: 1.5rem;
+}
+
+.menu-photo img {
+  width: 19px;
+  top: 4px;
+  left: -2px;
+  position: relative;
+}
+.menu-item {
+  height: 66.7%;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}
+
+.menu-item_food {
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(218, 215, 215);
+  padding: 22.95px;
+  cursor: pointer;
+}
+.menu-item_food:hover .num {
+  color: #000;
+  font-size: 20px;
+  transition: 0.2s;
+  margin-bottom: -1rem;
+}
+.burger {
+  border: none;
+}
+@media screen and (max-width: 540px) {
+   .container
+     {
+        width: auto;
+      
+     
+    }
+}
